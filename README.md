@@ -9,7 +9,7 @@
 2. **Hidden Layer Computation**:
 
    - For each neuron $j$ in a hidden layer:
-     - Weighted sum: $z^{[l]}_j = \sum_{i=1}^{n} w^{[l]}_{ji} \cdot a^{[l-1]}_i + b^{[l]}_j$
+     - Weighted sum: $z_j^{[l]} = \sum_{i=1}^{n} w_{ji}^{[l]} \cdot a_i^{[l-1]} + b_j^{[l]}$
      - Activation: $a^{[l]}_j = g^{[l]}(z^{[l]}_j)$
    - Where:
      - $w^{[l]}_{ji}$ is the weight from the $i$-th neuron in layer $l-1$ to the $j$-th neuron in layer $l$
@@ -18,7 +18,7 @@
 
 3. **Output Layer**:
    - Final output: $\hat{y} = g^{[L]}(z^{[L]})$
-   - For classification, often softmax: $\hat{y}_i = \frac{e^{z^{[L]}_i}}{\sum_{j=1}^{k} e^{z^{[L]}_j}}$
+   - For classification, often softmax: $\hat{y}_i = \frac{e^{z_i^{[L]}}}{\sum_{j=1}^{k} e^{z_j^{[L]}}}$
 
 ### Backward Propagation (Learning)
 
