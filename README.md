@@ -20,8 +20,9 @@
 
    - Final output: $\hat{y} = g^{[L]}(z^{[L]})$
    - For classification, often softmax:
-
-     $$\hat{y}_i = \frac{\exp(z_i^{[L]})}{\sum_{j=1}^{k} \exp(z_j^{[L]})}$$
+     ```
+     ŷᵢ = exp(zᵢ⁽ᴸ⁾) / Σⱼ exp(zⱼ⁽ᴸ⁾)
+     ```
 
 ### Backward Propagation (Learning)
 
