@@ -17,8 +17,11 @@
      - $g^{[l]}$ is the activation function (e.g., ReLU, sigmoid, tanh)
 
 3. **Output Layer**:
+
    - Final output: $\hat{y} = g^{[L]}(z^{[L]})$
-   - For classification, often softmax: $\hat{y}_i = \frac{e^{z_i^{[L]}}}{\sum_{j=1}^{k} e^{z_j^{[L]}}}$
+   - For classification, often softmax:
+
+     $$\hat{y}_i = \frac{\exp(z_i^{[L]})}{\sum_{j=1}^{k} \exp(z_j^{[L]})}$$
 
 ### Backward Propagation (Learning)
 
